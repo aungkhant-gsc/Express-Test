@@ -1,0 +1,2 @@
+20230104	13:56:26	ced51e81-e83b-4cd4-b1ce-dd7f5182c7e2	Error: Not allowed by CORS
+20230104	13:56:26	d0978a4f-2fc0-484e-938d-01239450ecf9	Error: Not allowed by CORS
