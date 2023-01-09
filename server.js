@@ -36,52 +36,24 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, './public')));
 
+app.use('/test', express.static(path.join(__dirname, './public')))
+
+
 // route
-app.get('^/$|/index(.html)?', (req, res) => {
-    //res.send("Hello World")
-    //res.sendFile('/views/index.html', {root: __dirname})
-    res.sendFile(path.join(__dirname, 'views', 'index.html'))
-})
-
-app.get('/new-page(.html)?', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'new-page.html'))
-})
-
-app.get('old-page(.html)?', (req, res) => {
-    //res.redirect('/new-page.html'); // 302 default
-    res.redirect(301, '/new-page.html');
-})
-
-// route handler
-app.get('/hello', (req, res, next) => {
-    console.log('Do something/...');
-    next();
-}, (req, res) => {
-    res.json({ message: "hello" })
-})
+app.use("/", require("./routes/root"))
+app.use('/test', require('./routes/test'))
+app.use('/employees', require('./routes/api/employee'))
 
 
-
-const A = (req, res, next) => {
-    console.log('A');
-    next()
-};
-
-const B = (req, res, next) => {
-    console.log('B');
-    next()
-};
-
-const C = (req, res) => {
-    res.send("Finished")
-};
-
-app.get('/chain', [A, B, C]);
-
-
-app.get('/*', (req, res) => {
-    //res.status(404).send('not found');
-    res.sendFile(path.join(__dirname, 'views', '404.html'))
+app.all('/*', (req, res) => {
+    res.status(404);
+    if(req.accepts('html')){
+        res.sendFile(path.join(__dirname, 'views', '404.html'))
+    }else if(req.accepts('json')){
+        res.json({err: "404 Not Found!"})
+    }else{
+        res.type('text').send("404 Not Found!")
+    }
 })
 
 app.use(errorHandler)

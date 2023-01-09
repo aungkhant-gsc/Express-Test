@@ -1,2 +1,14 @@
 20230104	13:56:26	ced51e81-e83b-4cd4-b1ce-dd7f5182c7e2	Error: Not allowed by CORS
 20230104	13:56:26	d0978a4f-2fc0-484e-938d-01239450ecf9	Error: Not allowed by CORS
+20230106	15:53:57	f21d1d8d-aa2a-4e25-a5bd-0cf6a88f1ef4	TypeError: req.accepted is not a function
+20230106	15:54:01	282e439b-5f45-46c3-a58e-e2b1b1053daf	TypeError: req.accepted is not a function
+20230106	15:54:01	67dd3764-00ce-4617-b42f-484834d60bd7	TypeError: req.accepted is not a function
+20230106	15:54:47	577ffe5f-347e-4395-9e48-d9576b43ed12	TypeError: req.accepted is not a function
+20230106	15:54:51	75ebcad0-cedb-4ae4-94ad-68bf1aac4f54	TypeError: req.accepted is not a function
+20230106	15:54:51	d6721dd9-42d1-42f6-8173-43cb0f31980e	TypeError: req.accepted is not a function
+20230106	15:55:33	4a8f6a0c-00e2-4746-b77b-6ce2603c855b	TypeError: req.accepted is not a function
+20230106	15:55:33	c55d0418-7c28-4a97-9b69-b312cc16ddd8	TypeError: req.accepted is not a function
+20230106	15:56:13	a8ab9d75-ca77-4ea4-ba03-3d237cf7f51f	TypeError: req.accepted is not a function
+20230106	15:56:13	87484d8f-f684-4e40-a70c-787ee59a6969	TypeError: req.accepted is not a function
+20230106	16:05:21	10d9c05d-5a5b-414c-bbbf-30e89f9c543d	Error: ENOENT: no such file or directory, stat '/home/ak-gsc/Desktop/Test/views/text/index.html'
+20230106	16:22:27	d5c22c68-9185-4ed1-9da4-8feeff345ed6	SyntaxError: Unexpected token } in JSON at position 31
