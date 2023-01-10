@@ -12,3 +12,7 @@
 20230106	15:56:13	87484d8f-f684-4e40-a70c-787ee59a6969	TypeError: req.accepted is not a function
 20230106	16:05:21	10d9c05d-5a5b-414c-bbbf-30e89f9c543d	Error: ENOENT: no such file or directory, stat '/home/ak-gsc/Desktop/Test/views/text/index.html'
 20230106	16:22:27	d5c22c68-9185-4ed1-9da4-8feeff345ed6	SyntaxError: Unexpected token } in JSON at position 31
+20230110	14:25:54	3aa44817-a7fd-4990-9251-32bb22845d14	ReferenceError: path is not defined
+20230110	14:26:31	98d8e7fc-8853-4abd-af9c-e95eb5d5a4ab	Error: ENOENT: no such file or directory, stat '/home/ak-gsc/Desktop/Test/middleware/views/404.html'
+20230110	14:26:31	359bbffd-09b2-492d-8e6f-5683620fee5d	Error: ENOENT: no such file or directory, stat '/home/ak-gsc/Desktop/Test/middleware/views/404.html'
+20230110	14:50:35	f88881e4-af9d-4e36-bb1e-e66fe623d2a9	ReferenceError: path is not defined
