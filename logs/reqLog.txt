@@ -76,3 +76,9 @@
 20230110	14:51:05	2ea30c78-aa6b-4612-a26d-88cdda3db5c3	GET	undefined	/css/style.css
 20230110	14:51:38	05a5339c-30bc-41d5-8f77-14f17c083f55	GET	undefined	/employees
 20230110	14:51:38	0296716a-94b9-4df5-9c03-221313e05b4d	GET	undefined	/css/style.css
+20230112	14:34:28	dc9b9ea0-0881-4b83-8504-8735058681e5	POST	undefined	/register
+20230112	14:34:42	8afd36e8-5185-4cf8-a6bf-4a5f904f1a19	POST	undefined	/register
+20230112	14:35:22	7aaeec94-201e-424c-af29-82827ec4352d	POST	undefined	/register
+20230112	14:45:26	a80fca42-13ad-4042-847f-4d6fed91b2aa	POST	undefined	/auth
+20230112	14:45:34	6550d54b-f10c-4fbe-8f86-b6fa19e27d8a	POST	undefined	/auth
+20230112	14:45:42	848bb236-2ab1-4746-a8a8-5e5ec14ae521	POST	undefined	/auth

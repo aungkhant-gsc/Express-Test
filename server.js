@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000;
 
 //custom middleware
 
-app.use(logger)
+app.use(logger);
 
 app.use(cors(corsOptions));
 
@@ -22,12 +22,14 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, './public')));
 
 // route
-app.use("/", require("./routes/root"))
-app.use('/employees', require('./routes/api/employee'))
+app.use("/", require("./routes/root"));
+app.use('/register', require('./routes/api/register'));
+app.use('/auth', require('./routes/api/auth'));
+app.use('/employees', require('./routes/api/employee'));
 
 
-app.all('/*', notFound)
+app.all('/*', notFound);
 
-app.use(errorHandler)
+app.use(errorHandler);
 
-app.listen(port, () => console.log(`Server is running on port ${port}`))
+app.listen(port, () => console.log(`Server is running on port ${port}`));
