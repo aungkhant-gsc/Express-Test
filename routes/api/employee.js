@@ -8,7 +8,7 @@ const {
     updateEmployee,
     deleteEmployee,
     getEmployee
-} = require("../../controllers/employeesController")
+} = require("../../controllers/employeesController");
 
 router.route('/')
     .get(getAllEmployee)
