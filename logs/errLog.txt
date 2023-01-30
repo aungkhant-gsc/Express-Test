@@ -16,3 +16,4 @@
 20230110	14:26:31	98d8e7fc-8853-4abd-af9c-e95eb5d5a4ab	Error: ENOENT: no such file or directory, stat '/home/ak-gsc/Desktop/Test/middleware/views/404.html'
 20230110	14:26:31	359bbffd-09b2-492d-8e6f-5683620fee5d	Error: ENOENT: no such file or directory, stat '/home/ak-gsc/Desktop/Test/middleware/views/404.html'
 20230110	14:50:35	f88881e4-af9d-4e36-bb1e-e66fe623d2a9	ReferenceError: path is not defined
+20230126	15:05:56	826ee6c7-391c-4e3e-be23-8dce2aa537e0	TypeError: authHeader?.startWith is not a function

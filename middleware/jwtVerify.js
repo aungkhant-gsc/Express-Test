@@ -3,7 +3,7 @@ const jwt =  require('jsonwebtoken');
 const jwtVerify = (req, res, next) => {
     const authHeader = req.headers['authorization'];
 
-    if(!authHeader) return res.status(401).json({message: "you do not have permission."})
+    if(!authHeader?.startsWith('Bearer ')) return res.status(401).json({message: "you do not have permission."})
 
     const token = authHeader.split(" ")[1];
 
@@ -12,7 +12,8 @@ const jwtVerify = (req, res, next) => {
         process.env.ACCESS_TOKEN_SECRET,
         (err, decoded) => {
             if(err) return res.status(403).json({message: "Invalid token!"})
-            req.user = decoded.username;
+            req.user = decoded.userInfo.username;
+            req.roles = decoded.userInfo.roles;
             next();
         }
     )
